@@ -2,4 +2,7 @@ language: rust
 rust:
   - nightly
 script:
-  - cargo build lcsdwsc --manifest-path ./lcsdwsc/Cargo.toml --verbose --all
+  - cargo build --manifest-path ./lcsdwsc/Cargo.toml --verbose --all
+
+deploy:
+  provider: heroku
