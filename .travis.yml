@@ -2,4 +2,4 @@ language: rust
 rust:
   - nightly
 script:
-  - cargo build lcsdwsc --verbose --all
+  - cargo build lcsdwsc --manifest-path ./lcsdwsc/Cargo.toml --verbose --all
