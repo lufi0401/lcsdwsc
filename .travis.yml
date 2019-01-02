@@ -1,8 +1,10 @@
 language: rust
 rust:
-  - nightly
+- nightly
 script:
-  - cargo build --manifest-path ./lcsdwsc/Cargo.toml --verbose --all
-
+- cargo build --manifest-path ./lcsdwsc/Cargo.toml --verbose --all
 deploy:
   provider: heroku
+  api_key:
+    secure: EzCHmo7AOb3D2M2l19gAz9jV9BB6hQIFIjTIRYJptwKZaIfsOq7ychcg6UygobVbrnQM2cXtG9ZKFiKKFkKr+whA2fsBCXsC3MgdkFjFO4CGjwOeX1A35h+0DF6e8O3WOgy+gXvbJy+OMN9yPPbyOiQeGlUVjrSlIxGo4X+vaWb9NCblhOcu6uXXimYl29X06Rkzfx03CfUxD8WFwumykF27aNuDaN6yhJoo3zSc1db8Hlod4Tr3oZL8yh0eI7nn/fxWDbzO7wne9T2KngETV81jtU1CoJElNI1bTo07m2nNEOIUr8sExDdj0H2ZFHldaCuZZ+U7fT/jmqZJ/kWjzxx12OqGlpfRizDifDcWUBWg/mBtmie8wvvsxE4gXZfFP2IZL+uroN9fKpZg2gZN4TWhvADJucfidoepPKjE3GrjbIKDboZDsVlox/MQNkNFgXR8q7MWAMPk1VwkGABanNsMdxt2DEVITWmqIzU8jXDSlglEEafvJmcVJ9XYY8K4dw9ny6cSo2kcKJgcI7sf+PIvNIA80tlTBT0c/pY+qv6LbNAzws27/J+8Qb5ZLJTv0rIjTBvblIHqCzVAzZWaNrkYTFTMmDsfldUXnF4jdhi0HGS8g2qjm4WUA1W720ym0TRBXyrw3ICh7T0FoHuAqWZBFsFdoS6Pp0Q0tm83YKc=
+  app: lcsdwsc
